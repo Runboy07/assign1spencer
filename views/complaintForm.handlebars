@@ -1,0 +1,80 @@
+<h1>Right Drive Automotive Complaint Form</h1>
+<form
+    id="complaintForm"
+    action="/submitComplaint"
+    method="POST"
+    enctype="multipart/form-data"
+>
+    <h2>Customer Information</h2>
+
+    <input
+        type="text"
+        name="fullName"
+        placeholder="Full Name"
+        required
+    >
+
+    <input
+        type="text"
+        name="email"
+        placeholder="Email Address"
+        required
+    >
+
+    <input
+        type="tel"
+        name="phone"
+        placeholder="Phone Number"
+        required
+    >
+
+    <h2>Vehicle Information</h2>
+
+    <input
+        type="text"
+        name="make"
+        placeholder="Vehicle Make"
+        required
+    >
+
+    <input
+        type="text"
+        name="model"
+        placeholder="Vehicle Model"
+        required
+    >
+
+    <input
+        type="text"
+        name="vin"
+        placeholder="VIN"
+        required
+    >
+
+    <h2>Complaint Details</h2>
+
+    <input
+        type="text"
+        name="subject"
+        placeholder="Subject"
+        required
+    >
+
+    <textarea
+        name="description"
+        placeholder="Complaint Description"
+        required
+    ></textarea>
+
+    <label>Upload Image</label>
+
+    <input
+        type="file"
+        name="image"
+        accept="image/*"
+    >
+
+    <button type="submit">
+        Submit Complaint
+    </button>
+</form>
